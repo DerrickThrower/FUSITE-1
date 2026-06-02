@@ -1,6 +1,6 @@
 "use client"
 
-import { Image, Card, Stack, Text, CardFooter, CardBody } from '@chakra-ui/react';
+import { Image, Card, Stack, Text } from '@chakra-ui/react';
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -10,7 +10,7 @@ const inter = Inter({
 
 export default function Testimonial({ imageSrc = "/placeholder.png", name, internClass, description, direction="row" }){
     return (
-        <Card
+        <Card.Root
             variant={'unstyled'}
             direction={{ base: 'hidden', sm: `${direction}` }}
             overflow='hidden'
@@ -35,13 +35,13 @@ export default function Testimonial({ imageSrc = "/placeholder.png", name, inter
                                         ${ direction==='row' ? "rounded-r-4xl rounded-bl-4xl" : "rounded-l-4xl rounded-br-4xl" }
                                         `} >
             <Image src="/quotes.png" alt="Quote Icon" width={{base: 30, lg: 70}}/>
-            <CardBody>
+            <Card.Body>
                 <Text py={{lg: '2'}} className={`text-base lg:text-[2vh] xl:leading-[4vh] leading-6 ${inter.className}`}>
                     {description}
                 </Text>
-            </CardBody>
+            </Card.Body>
 
-            <CardFooter className={`absolute right-5 bottom-2 lg:text-[2vh] text-sm ${inter.className}`}
+            <Card.Footer className={`absolute right-5 bottom-2 lg:text-[2vh] text-sm ${inter.className}`}
                         >
                 <Text>
                    {name} -
@@ -49,8 +49,8 @@ export default function Testimonial({ imageSrc = "/placeholder.png", name, inter
                 <Text as="i" color="#FFB900">
                     &nbsp; {internClass}
                 </Text>
-            </CardFooter>
+            </Card.Footer>
         </Stack>
-        </Card>
+        </Card.Root>
     )
 }

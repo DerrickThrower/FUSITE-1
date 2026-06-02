@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardBody } from '@chakra-ui/react';
+import { Card } from '@chakra-ui/react';
 import Image from "next/image";
 import { Livvic } from "next/font/google";
 import { Inter } from "next/font/google";
@@ -16,8 +16,8 @@ const inter = Inter({
 
 export default function CardComponent({ imageSrc = "/placeholder.png", heading, description }) {
     return (
-        <Card bg={{base: "transparent", md: "white"}} variant={{md: 'elevated', base: 'unstyled'}}>
-            <CardBody>
+        <Card.Root bg={{base: "transparent", md: "white"}} variant={{md: 'elevated', base: 'unstyled'}}>
+            <Card.Body>
                 <div className='flex md:flex-col flex-row md:items-center text-center
                       lg:h-[50vh] md:h-[400px] h-[128px]
                       lg:pt-[40px] md:pt-[40px]
@@ -41,7 +41,7 @@ export default function CardComponent({ imageSrc = "/placeholder.png", heading, 
                         </div>
                     </div>
                 </div>
-            </CardBody>
-        </Card>
+            </Card.Body>
+        </Card.Root>
     );
 }
