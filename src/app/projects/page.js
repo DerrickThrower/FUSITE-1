@@ -1,7 +1,11 @@
+import Hero from "@/components/Hero";
+
 export default function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      {/* TODO: pass the projects hero photo + eyebrow via props */}
+      <Hero title="PROJECTS" />
+      {/* page content */}
     </div>
   );
 }

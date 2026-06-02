@@ -1,7 +1,11 @@
+import Hero from "@/components/Hero";
+
 export default function Social() {
   return (
     <div>
-      <h1>Social</h1>
+      {/* TODO: pass the social hero photo + eyebrow via props */}
+      <Hero title="SOCIAL" />
+      {/* page content */}
     </div>
   );
 }

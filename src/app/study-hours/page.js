@@ -1,7 +1,11 @@
+import Hero from "@/components/Hero";
+
 export default function StudyHours() {
   return (
     <div>
-      <h1>Study Hours</h1>
+      {/* TODO: pass the study-hours hero photo + eyebrow via props */}
+      <Hero title="STUDY HOURS" />
+      {/* page content */}
     </div>
   );
 }

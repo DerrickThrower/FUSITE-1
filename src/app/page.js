@@ -1,6 +1,29 @@
+import Link from "next/link";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
     <div>
+      {/* TODO: pass the home hero photo via the `image` prop */}
+      <Hero
+        eyebrow="EST. 2001"
+        title={
+          <>
+            <span className="block text-3xl font-light sm:text-4xl md:text-5xl">
+              WELCOME TO
+            </span>
+            <span className="block">FUSION</span>
+          </>
+        }
+      >
+        <Link
+          href="/about"
+          className="mt-8 inline-block rounded-md bg-[#FDC700] px-8 py-3 text-sm font-bold tracking-[0.15em] text-[#1A1A2E] transition-opacity hover:opacity-90"
+        >
+          LEARN MORE ›
+        </Link>
+      </Hero>
+
       <div
         className="w-full mx-auto
                   min-h-[737px] md:min-h-[514px] lg:min-h-[602px]

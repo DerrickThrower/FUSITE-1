@@ -1,7 +1,11 @@
+import Hero from "@/components/Hero";
+
 export default function Athletics() {
   return (
     <div>
-      <h1>Athletics</h1>
+      {/* TODO: pass the athletics hero photo + eyebrow via props */}
+      <Hero title="ATHLETICS" />
+      {/* page content */}
     </div>
   );
 }

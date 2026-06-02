@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import CardComponent from "./card";
 import Carousel from "./carousel.js"
 import Testimonial from "@/components/Testimonial";
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 const karla = Karla({
@@ -18,8 +19,10 @@ const inter = Inter({
 export default function Home() {
   return (
     <div>
-      <div className="flex flex-col items-center 
-                      md:justify-center  
+      {/* TODO: pass the internship hero photo + eyebrow via props */}
+      <Hero title="INTERNSHIP" />
+      <div className="flex flex-col items-center
+                      md:justify-center
                       lg:h-[50vh] md:h-[457px] h-[329px]
                       lg:pr-[354px] md:pr-[32px] pr-[16px]
                       lg:pl-[354px] md:pl-[32px] pl-[16px]">

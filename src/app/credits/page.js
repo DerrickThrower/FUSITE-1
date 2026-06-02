@@ -1,7 +1,11 @@
+import Hero from "@/components/Hero";
+
 export default function Credits() {
   return (
     <div>
-      <h1>Credits</h1>
+      {/* TODO: pass the credits hero photo + eyebrow via props */}
+      <Hero title="CREDITS" />
+      {/* page content */}
     </div>
   );
 }
