@@ -3,7 +3,7 @@ import { Providers } from "./providers";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "FUSITE",
+  title: "FUSION Website",
   description: "Welcome",
 };
 
