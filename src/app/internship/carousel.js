@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react';
-import { Text, Flex, Circle } from '@chakra-ui/react';
+import { Text, Flex, Box } from '@chakra-ui/react';
 import Image from 'next/image';
 
 const testimonials = [
@@ -78,9 +78,11 @@ export default function Carousel() {
 
       <Flex mt={4} gap={2}>
         {testimonials.map((_, idx) => (
-          <Circle
+          <Box
             key={idx}
-            size="2"
+            w="2"
+            h="2"
+            rounded="full"
             cursor="pointer"
             bg={idx === current ? '#FAC80A' : '#979488'}
             onClick={() => setCurrent(idx)}
