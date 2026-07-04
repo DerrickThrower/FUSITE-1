@@ -1,9 +1,6 @@
 import { Livvic, Inter } from "next/font/google";
 import Hero from "@/components/Hero";
 import familyHero from "./images/familyhero.jpg";
-import FamsCarousel from "./FamsCarousel";
-import ChallengeCard from "./ChallengeCard";
-import Starburst from "./Starburst";
 
 const livvic = Livvic({ weight: ["600", "700"], subsets: ["latin"] });
 const inter = Inter({ weight: ["400", "500"], subsets: ["latin"] });
