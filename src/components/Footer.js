@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaInstagram, FaDiscord, FaFacebook, FaLinkedin, FaEnvelope, FaCopyright } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -29,6 +30,9 @@ export default function Footer() {
           <a href="#" className="text-body flex items-center gap-2 text-text-white hover:opacity-80 transition-opacity">
             <FaLinkedin size={18} /> LinkedIn
           </a>
+          <a href="#" className="text-body flex items-center gap-2 text-text-white hover:opacity-80 transition-opacity">
+            <FaTiktok size={18} /> TikTok
+          </a>
         </div>
 
         <div style={{ padding: "16px" }} className="flex flex-col gap-2">
@@ -41,19 +45,29 @@ export default function Footer() {
 
         <div style={{ padding: "16px" }} className="flex flex-col gap-2">
           <h3 className="text-body text-text-white font-bold text-lg">JOIN OUR NEWSLETTER</h3>
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="text-body bg-[#F9FAFB] text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-text-fg-yellow/50"
+          <div
+            className="flex items-center gap-2 bg-[#F9FAFB]"
             style={{
               width: 384,
               height: 52,
-              borderRadius: "var(--radius-rounded-base)",
+              borderRadius: "12px",
               padding: "var(--spacing-2_5) var(--spacing-2_5) var(--spacing-2_5) var(--spacing-3)",
               border: "var(--border-width) solid #E5E7EB",
               boxShadow: "0px 1px 0.5px 0.05px rgba(29, 41, 61, 0.02)",
             }}
-          />
+          >
+            <input
+              type="email"
+              placeholder="Email Address"
+              className="text-body min-w-0 flex-1 bg-transparent text-gray-900 placeholder:text-gray-500 focus:outline-none"
+            />
+            <button
+              type="button"
+              className="text-body shrink-0 rounded-lg border border-[#E5E7EB] bg-white px-3 py-1.5 font-medium text-text-body transition-colors hover:bg-gray-50"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
 
@@ -61,7 +75,7 @@ export default function Footer() {
         <p className="text-body text-[#7D7D7D] flex items-center gap-2">
           <FaCopyright size={14} /> Copyright FUSION 2025
         </p>
-        <p className="text-body text-[#7D7D7D]">created by FUSITETEAM2</p>
+        <p className="text-body text-[#7D7D7D]">Created by FUSITE2 Team</p>
       </div>
       </div>
 
@@ -73,6 +87,7 @@ export default function Footer() {
           src="/gear-footer.png"
           alt=""
           fill
+          sizes="350px"
           className="object-contain"
           style={{ objectPosition: "right bottom" }}
         />

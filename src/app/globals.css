@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap');
 @import "tailwindcss";
 
 
@@ -38,6 +39,17 @@
   --color-slate-950: #020618;
   --color-text-fg-yellow: #FDC700;
   --color-text-white: #FFFFFF;
+  /* FUSITE2 Hi-Fi palette (Figma) */
+  --color-fusion-yellow: #FDC700;   /* yellow/400 — primary CTA */
+  --color-fusion-amber: #FE9A00;    /* amber/500 — accent band + secondary CTA */
+  --color-fusion-cream: #FFF8F1;    /* orange/050 — alternating section bg */
+  --color-fusion-ink: #101828;      /* text on yellow */
+  --color-fusion-body: #3C3C3C;     /* paragraph text */
+  --color-fusion-muted: #99A1AF;    /* hero eyebrow */
+}
+
+.font-karla {
+  font-family: 'Karla', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
