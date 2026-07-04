@@ -1,7 +1,11 @@
+import Hero from "@/components/Hero";
+
 export default function FEP() {
   return (
     <div>
-      <h1>FEP</h1>
+      {/* TODO: pass the FEP hero photo + eyebrow via props */}
+      <Hero title="FEP" />
+      {/* page content */}
     </div>
   );
 }

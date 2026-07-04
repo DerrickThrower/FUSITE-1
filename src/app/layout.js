@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Providers } from "./providers";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -12,6 +13,8 @@ export default function RootLayout({ children }) {
     <html>
       <body>
         <Providers>
+          {/* Global navbar: overlays the top of every page's hero. */}
+          <Navbar />
           {children}
           <Footer />
         </Providers>
