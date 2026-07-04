@@ -13,7 +13,7 @@ const PROGRAM_CARDS = [
   { name: "FAMILY", href: "/family", image: "/programs/card-family.jpg" },
   { name: "FUNDRAISING", href: "/fundraising", image: "/programs/card-fundraising.jpg" },
   { name: "INTERNSHIP", href: "/internship", image: "/programs/card-internship.jpg" },
-  { name: "MENTORSHIP", href: "/programs", image: "/programs/card-mentorship.jpg" },
+  { name: "MENTORSHIP", href: "/mentorship", image: "/programs/card-mentorship.jpg" },
   { name: "SOCIAL", href: "/social", image: "/programs/card-social.jpg" },
   { name: "STUDY HOURS", href: "/study-hours", image: "/programs/card-study-hours.jpg" },
   { name: "WORKSHOPS", href: "/programs", image: "/programs/card-workshops.jpg" },

@@ -40,7 +40,7 @@ const SLIDES = [
   },
   {
     name: "MENTORSHIP",
-    href: "/programs",
+    href: "/mentorship",
     image: "/programs/card-mentorship.jpg",
     text: "Mentors and mentees are matched to share guidance on academics, career paths, and life at UC Irvine.",
   },

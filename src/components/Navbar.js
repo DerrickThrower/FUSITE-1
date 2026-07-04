@@ -20,6 +20,7 @@ const NAV_ITEMS = [
     children: [
       { label: "Family", href: "/family" },
       { label: "Internship", href: "/internship" },
+      { label: "Mentorship", href: "/mentorship" },
       { label: "Athletics", href: "/athletics" },
       { label: "FEP", href: "/fep" },
       { label: "FIP", href: "/fip" },
