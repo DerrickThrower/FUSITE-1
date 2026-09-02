@@ -3,6 +3,12 @@ import { Karla } from "next/font/google";
 import Hero from "@/components/Hero";
 import TestimonialCard from "@/components/TestimonialCard";
 
+export const metadata = {
+  title: "Internship",
+  description:
+    "The FUSION internship program: what interns do, who it's for, and how to apply.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 const DUTIES = [
@@ -101,7 +107,7 @@ export default function Internship() {
       <section className="relative w-full overflow-hidden">
         <div aria-hidden className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#FACA84] via-white to-[#FBC578]" />
-          <Image src="/internship/duties-texture.png" alt="" fill sizes="100vw" className="object-cover opacity-5" />
+          <Image src="/internship/duties-texture.jpg" alt="" fill sizes="100vw" className="object-cover opacity-5" />
         </div>
         <div className="relative mx-auto flex w-full max-w-[1166px] flex-col items-center gap-10 px-5 py-16 md:py-[160px]">
           <h2 className={`${karla.className} text-3xl font-bold text-black lg:text-[40px]`}>
@@ -120,15 +126,15 @@ export default function Internship() {
       <section className="relative w-full overflow-hidden bg-gradient-to-b from-white to-neutral-500">
         <div
           aria-hidden
-          className="absolute -left-[295px] top-[56px] hidden h-[578px] w-[575px] -rotate-45 border-[46px] border-[#FAC80A] lg:block"
+          className="absolute -left-[295px] top-[56px] hidden h-[578px] w-[575px] -rotate-45 border-[46px] border-fusion-yellow lg:block"
         />
         <div
           aria-hidden
-          className="absolute left-[997px] top-[975px] hidden h-[455px] w-[453px] -rotate-45 border-[46px] border-[#FAC80A] lg:block"
+          className="absolute left-[997px] top-[975px] hidden h-[455px] w-[453px] -rotate-45 border-[46px] border-fusion-yellow lg:block"
         />
         <div className="relative mx-auto flex w-full max-w-[1166px] flex-col items-center gap-10 px-5 py-16 md:px-8 md:py-[160px]">
           <h2 className={`${karla.className} text-center text-3xl font-bold text-black lg:text-[40px]`}>
-            <span className="text-[#FFA523]">Why</span> Intern for FUSION?
+            <span className="text-fusion-amber">Why</span> Intern for FUSION?
           </h2>
           <TestimonialCard {...TESTIMONIALS[0]} />
           <TestimonialCard {...TESTIMONIALS[1]} reverse />
@@ -152,7 +158,7 @@ export default function Internship() {
           </h2>
           <a
             href="#"
-            className="inline-flex items-center gap-1.5 rounded-xl bg-[#FFA523] px-5 py-3 text-base font-bold tracking-[0.12em] text-white shadow-sm transition-opacity hover:opacity-90"
+            className="inline-flex items-center gap-1.5 rounded-xl bg-fusion-amber px-5 py-3 text-base font-bold tracking-[0.12em] text-white shadow-sm transition-opacity hover:opacity-90"
           >
             Apply Here <span aria-hidden>›</span>
           </a>

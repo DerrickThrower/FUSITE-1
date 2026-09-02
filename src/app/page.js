@@ -34,7 +34,7 @@ function InfoSection({ variant = "band", reverse = false, image, imageAlt, headi
       )}
 
       <div
-        className={`relative mx-auto flex max-w-[1440px] flex-col items-center justify-center gap-10 px-5 py-16 md:gap-[60px] md:px-8 md:py-[100px] lg:px-[138px] lg:py-[160px] ${
+        className={`relative mx-auto flex max-w-[1440px] flex-col-reverse items-center justify-center gap-10 px-5 py-16 md:gap-[60px] md:px-8 md:py-[100px] lg:px-[138px] lg:py-[160px] ${
           reverse ? "md:flex-row-reverse" : "md:flex-row"
         }`}
       >
@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* ───── Our Mission (Figma "Text Section") ───── */}
       <section className="flex w-full justify-center bg-white px-5 py-16 md:px-8 md:py-[100px] lg:py-[160px]">
-        <div className="flex w-full max-w-[1000px] flex-col items-center gap-5 text-center">
+        <div className="flex w-full max-w-[732px] flex-col items-center gap-5 text-center">
           <h2 className={`${karla.className} text-2xl font-bold tracking-[0.12em] text-black lg:text-[32px]`}>
             Our Mission
           </h2>
@@ -141,7 +141,7 @@ export default function Home() {
       <Hero
         image="/home/join-bg.png"
         imageAlt="FUSION community group photo"
-        className="h-[70vh] min-h-[480px]"
+        heightClass="min-h-[348px] md:min-h-[467px] lg:min-h-[739px]"
         overlayClassName="bg-[#111928]/70 bg-gradient-to-b from-transparent to-fusion-amber/60"
         eyebrow="INTERESTED?"
         title="JOIN FUSION"

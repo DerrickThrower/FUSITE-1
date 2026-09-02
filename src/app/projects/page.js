@@ -6,6 +6,12 @@ import NumbersBand from "@/components/NumbersBand";
 import ExpectCarousel from "./ExpectCarousel";
 import Countdown from "./Countdown";
 
+export const metadata = {
+  title: "Projects",
+  description:
+    "FUSIONCON, FEP, and FIP — the project teams where FUSION members build things.",
+};
+
 const karla = Karla({ weight: ["500", "700"], subsets: ["latin"] });
 
 const STATS = [
@@ -110,7 +116,7 @@ export default function Projects() {
       <section className="relative flex w-full justify-center overflow-hidden py-16 lg:py-[100px]">
         <div
           aria-hidden
-          className="absolute left-1/2 top-1/2 hidden h-[578px] w-[575px] -translate-x-[calc(50%+407px)] -translate-y-1/2 -rotate-45 border-[46px] border-[#FAC80A] lg:block"
+          className="absolute left-1/2 top-1/2 hidden h-[578px] w-[575px] -translate-x-[calc(50%+407px)] -translate-y-1/2 -rotate-45 border-[46px] border-fusion-yellow lg:block"
         />
         <div className="relative mx-5 h-[240px] w-full max-w-[1157px] overflow-hidden rounded-[20px] md:h-[400px] lg:h-[627px]">
           <Image

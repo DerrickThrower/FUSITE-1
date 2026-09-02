@@ -3,9 +3,15 @@ import { Karla } from "next/font/google";
 import { FaInstagram } from "react-icons/fa";
 import Hero from "@/components/Hero";
 
+export const metadata = {
+  title: "Study Hours",
+  description:
+    "Weekly study hours and academic support for FUSION members at UC Irvine.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
-function BubbleHeader({ eyebrow, title, eyebrowClass = "text-[#FAC80A]" }) {
+function BubbleHeader({ eyebrow, title, eyebrowClass = "text-fusion-yellow" }) {
   return (
     <div className="flex flex-col gap-3">
       <p className={`${karla.className} text-xl font-bold tracking-[0.12em] lg:text-2xl ${eyebrowClass}`}>
@@ -101,9 +107,9 @@ export default function StudyHours() {
             </div>
           </div>
           <div className="flex gap-5 self-start">
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]/50" />
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]/70" />
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow/50" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow/70" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow" />
           </div>
         </div>
       </section>
@@ -111,7 +117,7 @@ export default function StudyHours() {
       {/* ───── Join us at the Science Library ───── */}
       <section className="relative w-full overflow-hidden">
         <div aria-hidden className="absolute inset-0">
-          <Image src="/study-hours/join-bg.png" alt="" fill sizes="100vw" className="object-cover" />
+          <Image src="/study-hours/join-bg.jpg" alt="" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-black/30" />
         </div>
         <div className={`${karla.className} relative mx-auto flex w-full max-w-[942px] flex-col items-center gap-12 px-5 py-[100px] text-center text-white`}>

@@ -2,6 +2,12 @@ import Image from "next/image";
 import { Karla } from "next/font/google";
 import Hero from "@/components/Hero";
 
+export const metadata = {
+  title: "About",
+  description:
+    "FUSION's story, five pillars, and the partner organizations we build with at UC Irvine.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 const PILLARS = [

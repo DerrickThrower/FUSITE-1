@@ -5,6 +5,12 @@ import NumbersBand from "@/components/NumbersBand";
 import TeamStructure from "./TeamStructure";
 import PastProjects from "./PastProjects";
 
+export const metadata = {
+  title: "FUSION ICS Project",
+  description:
+    "FIP is FUSION's software project team, shipping real applications from concept to demo.",
+};
+
 const karla = Karla({ weight: ["700"], subsets: ["latin"] });
 
 const STATS = [
@@ -113,7 +119,7 @@ export default function FIP() {
       {/* ───── Process infographic ───── */}
       <section className="relative w-full">
         <Image
-          src="/fip/process-infographic.png"
+          src="/fip/process-infographic.jpg"
           alt="FIP process: plan, design, develop, test, finalize"
           width={1440}
           height={885}

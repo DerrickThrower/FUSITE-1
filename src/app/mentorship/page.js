@@ -2,6 +2,12 @@ import Image from "next/image";
 import { Karla } from "next/font/google";
 import Hero from "@/components/Hero";
 
+export const metadata = {
+  title: "Mentorship",
+  description:
+    "One-on-one mentorship pairing FUSION members with upperclassmen and industry mentors.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 const LINES = [
@@ -76,7 +82,7 @@ export default function Mentorship() {
   return (
     <div className="bg-white">
       <Hero
-        image="/mentorship/hero.png"
+        image="/mentorship/hero.jpg"
         imageAlt="Mentorship reveal event"
         eyebrow="PROGRAMS"
         title="MENTORSHIP"
@@ -169,7 +175,7 @@ export default function Mentorship() {
           </h2>
           <a
             href="#"
-            className="inline-flex items-center gap-1.5 rounded-xl bg-[#FFA523] px-5 py-3 text-base font-bold tracking-[0.12em] text-white shadow-sm transition-opacity hover:opacity-90"
+            className="inline-flex items-center gap-1.5 rounded-xl bg-fusion-amber px-5 py-3 text-base font-bold tracking-[0.12em] text-white shadow-sm transition-opacity hover:opacity-90"
           >
             Apply Here <span aria-hidden>›</span>
           </a>

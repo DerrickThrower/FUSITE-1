@@ -1,15 +1,4 @@
-/* Establish cascade-layer order so Tailwind's `utilities` layer wins over
-   Chakra UI's `reset` layer. Without this, Chakra's `@layer reset { * }`
-   (which sets font-size/font-weight: inherit) overrides every Tailwind
-   font-size/weight utility site-wide, collapsing all text to 16px/400.
-   This statement must come first to establish priority (low -> high). */
-@layer reset, base, tokens, recipes, theme, components, properties, utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap');
 @import "tailwindcss";
-
 
 :root {
   --background: #ffffff;
@@ -19,7 +8,7 @@
   --spacing-3: 12px;
   --radius-rounded-base: 6px;
   --border-width: 1px;
-  --font-family-base: 'Inter', sans-serif;
+  --font-family-base: var(--font-inter), 'Inter', sans-serif;
   --font-size-text-sm: 0.875rem;
   --line-height-leading-5: 1.25rem;
 }
@@ -27,8 +16,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter), 'Inter', sans-serif;
+  --font-display: var(--font-karla), 'Karla', sans-serif;
 }
 
 @theme {
@@ -39,7 +28,8 @@
   --color-slate-950: #020618;
   --color-text-fg-yellow: #FDC700;
   --color-text-white: #FFFFFF;
-  /* FUSITE2 Hi-Fi palette (Figma) */
+  /* FUSITE2 Hi-Fi palette (Figma). Single source of truth — do not hardcode
+     brand hexes in page files; use these tokens so the palette stays one set. */
   --color-fusion-yellow: #FDC700;   /* yellow/400 — primary CTA */
   --color-fusion-amber: #FE9A00;    /* amber/500 — accent band + secondary CTA */
   --color-fusion-cream: #FFF8F1;    /* orange/050 — alternating section bg */
@@ -48,29 +38,19 @@
   --color-fusion-muted: #99A1AF;    /* hero eyebrow */
 }
 
-.font-karla {
-  font-family: 'Karla', sans-serif;
+/* Font helpers. The families come from next/font in layout.js. */
+.font-inter {
+  font-family: var(--font-inter), 'Inter', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-karla {
+  font-family: var(--font-karla), 'Karla', sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.font-inter {
-  font-family: 'Inter', sans-serif;
-}
-
-.font-livvic {
-  font-family: 'Livvic', sans-serif;
+  font-family: var(--font-inter), 'Inter', sans-serif;
 }
 
 .text-body {
