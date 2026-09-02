@@ -3,6 +3,12 @@ import { Karla } from "next/font/google";
 import Hero from "@/components/Hero";
 import FamCarousel from "./FamCarousel";
 
+export const metadata = {
+  title: "Family",
+  description:
+    "The FUSION family system — fams, challenges, and the people who make it home.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 const CHALLENGES = [
@@ -37,10 +43,10 @@ const CHALLENGES = [
   {
     title: "DANCE OFF CHALLENGE:",
     text: "Practice your dance moves by coming to FTEK!",
-    image: "/family/challenge-dance.png",
+    image: "/family/challenge-dance.jpg",
     rounded: "rounded-bl-[18px] rounded-br-[18px] rounded-tr-[44px]",
     sticker: (
-      <div className="absolute -right-24 bottom-[-56px] flex h-[59px] w-[183px] items-center justify-center bg-[#FAC80A]">
+      <div className="absolute -right-24 bottom-[-56px] flex h-[59px] w-[183px] items-center justify-center bg-fusion-yellow">
         <span className="font-inter text-xl font-bold text-black">+ 50 PTS</span>
       </div>
     ),
@@ -102,7 +108,7 @@ export default function Family() {
         <div className="mx-auto flex w-full max-w-[1312px] flex-col gap-16 px-5 py-20 md:px-8">
           <div className="flex flex-col items-center gap-5">
             <h2 className={`${karla.className} text-3xl font-bold leading-tight text-black md:text-4xl lg:text-[48px] lg:leading-[52px]`}>
-              <span className="text-[#FFA523]">Fam</span> Challenges
+              <span className="text-fusion-amber">Fam</span> Challenges
             </h2>
             <div className="h-1 w-[213px] bg-fusion-yellow" />
           </div>

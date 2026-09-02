@@ -3,12 +3,18 @@ import { Karla } from "next/font/google";
 import Hero from "@/components/Hero";
 import AlumniDirectory from "./AlumniDirectory";
 
+export const metadata = {
+  title: "Alumni",
+  description:
+    "Where FUSION alumni land after UCI, and how to stay connected with the network.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 function BubbleHeader({ eyebrow, title }) {
   return (
     <div className="flex flex-col gap-3">
-      <p className={`${karla.className} text-xl font-bold tracking-[0.12em] text-[#FAC80A] lg:text-2xl`}>
+      <p className={`${karla.className} text-xl font-bold tracking-[0.12em] text-fusion-yellow lg:text-2xl`}>
         {eyebrow} &raquo;
       </p>
       <h3 className={`${karla.className} text-3xl font-bold text-black lg:text-[40px]`}>{title}</h3>
@@ -102,9 +108,9 @@ export default function Alumni() {
             </div>
           </div>
           <div className="flex gap-5 self-start">
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]/50" />
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]/70" />
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow/50" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow/70" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow" />
           </div>
         </div>
       </section>

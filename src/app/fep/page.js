@@ -4,6 +4,12 @@ import Hero from "@/components/Hero";
 import NumbersBand from "@/components/NumbersBand";
 import TeamStructure from "./TeamStructure";
 
+export const metadata = {
+  title: "FUSION Engineering Project",
+  description:
+    "FEP pairs members with mentors to design and build a hardware project across the year.",
+};
+
 const karla = Karla({ weight: ["700"], subsets: ["latin"] });
 
 const STATS = [
@@ -139,7 +145,7 @@ export default function FEP() {
       {/* ───── Process infographic ───── */}
       <section className="relative w-full">
         <Image
-          src="/fep/infographic.png"
+          src="/fep/infographic.jpg"
           alt="FEP process: plan, design, develop, test, finalize"
           width={1440}
           height={885}
@@ -246,7 +252,7 @@ export default function FEP() {
         <div aria-hidden className="absolute inset-0">
           <Image src="/fep/testimonials-bg.jpg" alt="" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-black/70" />
-          <div className="absolute inset-0 bg-[#FFA523]/40" />
+          <div className="absolute inset-0 bg-fusion-amber/40" />
         </div>
         <div className="relative mx-auto flex w-full max-w-[1164px] flex-col items-center gap-10 px-5 py-16 md:px-8 lg:py-[160px]">
           <h2 className={`${karla.className} text-3xl font-bold text-white lg:text-[40px]`}>

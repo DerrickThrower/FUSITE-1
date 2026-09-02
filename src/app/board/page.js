@@ -2,6 +2,12 @@ import Image from "next/image";
 import { Karla } from "next/font/google";
 import Hero from "@/components/Hero";
 
+export const metadata = {
+  title: "Board",
+  description:
+    "Meet the executive, appointed, and committee members running FUSION this year.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 const EXECUTIVE = [
@@ -18,9 +24,9 @@ const APPOINTED = [
   { name: "Sydney Chou", role: "CO-ICS PROJECT DIRECTOR", image: null },
   { name: "Anthony Fabros", role: "CO-ENGINEERING PROJECT DIRECTOR", image: "/board/anthony-fabros.jpg" },
   { name: "Ricky Ferriol", role: "CO-ENGINEERING PROJECT DIRECTOR", image: "/board/ricky-ferriol.jpg" },
-  { name: "Kaylee Quinn", role: "CO-ATHLETICS DIRECTOR", image: "/board/kaylee-quinn.png" },
+  { name: "Kaylee Quinn", role: "CO-ATHLETICS DIRECTOR", image: "/board/kaylee-quinn.jpg" },
   { name: "Name", role: "CO-ATHLETICS DIRECTOR", image: null },
-  { name: "Emily Tang", role: "CO-ACADEMICS DIRECTOR", image: "/board/emily-tang.png" },
+  { name: "Emily Tang", role: "CO-ACADEMICS DIRECTOR", image: "/board/emily-tang.jpg" },
   { name: "Joshua Yalung", role: "CO-ACADEMICS DIRECTOR", image: "/board/joshua-yalung.jpg" },
   { name: "Emma Nazareno", role: "CO-FUNDRAISING DIRECTOR", image: "/board/emma-nazareno.jpg" },
   { name: "Dylan Kha", role: "CO-FUNDRAISING DIRECTOR", image: "/board/dylan-kha.jpg" },

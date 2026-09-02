@@ -76,7 +76,7 @@ export default function ProgramCarousel() {
   const step = (d) => setIndex((i) => (i + d + SLIDES.length) % SLIDES.length);
 
   return (
-    <section className="relative h-[684px] w-full overflow-hidden bg-[#FFA523]">
+    <section className="relative h-[684px] w-full overflow-hidden bg-fusion-amber">
       {/* Photo inset below a thin amber strip, like the Figma layout */}
       <div className="absolute inset-x-0 bottom-0 top-8">
         <Image

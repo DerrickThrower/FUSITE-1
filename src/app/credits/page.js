@@ -3,6 +3,12 @@ import { Karla } from "next/font/google";
 import { FaLinkedin } from "react-icons/fa";
 import Hero from "@/components/Hero";
 
+export const metadata = {
+  title: "FUSITE Team",
+  description:
+    "The designers and developers who built and maintain the FUSION website.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 /* null image = headshot not yet in the design; renders the gray placeholder */
@@ -12,7 +18,7 @@ const DESIGNERS = [
   { name: "Emma Narvaez", role: "CO-PUBLICITY DIRECTOR", image: "/credits/emma-narvaez.jpg" },
   { name: "Name", role: "DESIGNER", image: null },
   { name: "Name", role: "DESIGNER", image: null },
-  { name: "Kaylee Quinn", role: "CO-ATHLETICS DIRECTOR", image: "/credits/kaylee-quinn.png" },
+  { name: "Kaylee Quinn", role: "CO-ATHLETICS DIRECTOR", image: "/credits/kaylee-quinn.jpg" },
 ];
 
 const DEVELOPERS = [

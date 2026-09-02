@@ -114,7 +114,7 @@ export default function Navbar() {
 
       {/* ───────── Mobile expanded menu ───────── */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-[#3c3a37]/98 backdrop-blur-sm lg:hidden">
+        <div className="fixed inset-0 z-50 flex flex-col bg-[#4F4F4F] lg:hidden">
           <div className="flex items-center justify-between px-6 py-6 md:px-10">
             <Logo />
             <button
@@ -127,7 +127,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          <ul className="flex flex-col gap-1 px-8 py-4">
+          <ul className="flex flex-col py-[30px]">
             {NAV_ITEMS.map((item) =>
               item.children ? (
                 <li key={item.label} className="flex flex-col">
@@ -135,7 +135,7 @@ export default function Navbar() {
                     <Link
                       href={item.href}
                       onClick={closeMenu}
-                      className="py-3 text-xl tracking-[0.1em] text-white"
+                      className="flex min-h-[75px] flex-1 items-center px-10 text-xl tracking-[0.1em] text-white"
                     >
                       {item.label}
                     </Link>
@@ -144,7 +144,7 @@ export default function Navbar() {
                       aria-label="Toggle Programs submenu"
                       aria-expanded={programsOpen}
                       onClick={() => setProgramsOpen((v) => !v)}
-                      className="p-3 text-white"
+                      className="px-10 py-3 text-white"
                     >
                       <FiChevronDown
                         size={18}
@@ -153,7 +153,7 @@ export default function Navbar() {
                     </button>
                   </div>
                   {programsOpen && (
-                    <ul className="flex flex-col border-l border-white/20 pl-4">
+                    <ul className="flex flex-col border-l border-white/20 ml-10 pl-4">
                       {item.children.map((child) => (
                         <li key={child.label}>
                           <Link
@@ -173,7 +173,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     onClick={closeMenu}
-                    className="block py-3 text-xl tracking-[0.1em] text-white"
+                    className="flex min-h-[75px] items-center px-10 text-xl tracking-[0.1em] text-white"
                   >
                     {item.label}
                   </Link>

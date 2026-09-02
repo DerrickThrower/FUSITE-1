@@ -3,6 +3,12 @@ import { Karla } from "next/font/google";
 import Hero from "@/components/Hero";
 import TestimonialCard from "@/components/TestimonialCard";
 
+export const metadata = {
+  title: "Fundraising",
+  description:
+    "How FUSION funds its programs, and the events that keep them running.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 const DIRECTORS = [
@@ -60,7 +66,7 @@ export default function Fundraising() {
         </div>
         <div className="relative flex w-full items-center justify-center gap-[35px] px-5 py-10 lg:h-[556px] lg:px-[138px]">
           <div className="relative hidden h-[360px] w-[517px] shrink-0 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] lg:block">
-            <Image src="/fundraising/photo-1.png" alt="Members selling bacon-wrapped hot dogs" fill sizes="517px" className="object-cover" />
+            <Image src="/fundraising/photo-1.jpg" alt="Members selling bacon-wrapped hot dogs" fill sizes="517px" className="object-cover" />
           </div>
           <div className="relative h-[300px] w-full max-w-[630px] shrink-0 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] lg:h-[472px] lg:w-[630px]">
             <Image src="/fundraising/photo-2.jpg" alt="Fundraising table on Ring Road" fill sizes="630px" className="object-cover" />

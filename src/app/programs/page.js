@@ -5,10 +5,16 @@ import Hero from "@/components/Hero";
 import TestimonialCard from "@/components/TestimonialCard";
 import ProgramCarousel from "./ProgramCarousel";
 
+export const metadata = {
+  title: "Programs",
+  description:
+    "The nine FUSION programs, from internship and mentorship to athletics and social.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
 const PROGRAM_CARDS = [
-  { name: "ALUMNI", href: "/alumni", image: "/programs/card-alumni.png" },
+  { name: "ALUMNI", href: "/alumni", image: "/programs/card-alumni.jpg" },
   { name: "ATHLETICS", href: "/athletics", image: "/programs/card-athletics.png" },
   { name: "FAMILY", href: "/family", image: "/programs/card-family.jpg" },
   { name: "FUNDRAISING", href: "/fundraising", image: "/programs/card-fundraising.jpg" },
@@ -111,7 +117,7 @@ export default function Programs() {
         <div aria-hidden className="absolute inset-0">
           <Image src="/programs/testimonials-bg.jpg" alt="" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-black/70" />
-          <div className="absolute inset-0 bg-[#FFA523]/40" />
+          <div className="absolute inset-0 bg-fusion-amber/40" />
         </div>
         <div className="relative mx-auto flex w-full max-w-[1440px] flex-col items-center gap-10 px-5 py-16 md:px-8 md:py-[100px] lg:px-[138px] lg:py-[160px]">
           <h2 className={`${karla.className} text-center text-3xl font-bold text-white lg:text-[40px]`}>

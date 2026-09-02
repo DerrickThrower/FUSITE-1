@@ -2,9 +2,15 @@ import Image from "next/image";
 import { Karla } from "next/font/google";
 import Hero from "@/components/Hero";
 
+export const metadata = {
+  title: "Athletics",
+  description:
+    "Intramural teams, FUSION Fever, and everything else that gets members moving.",
+};
+
 const karla = Karla({ weight: ["700", "800"], subsets: ["latin"] });
 
-function InfoBubble({ eyebrow, title, text, eyebrowClass = "text-[#FAC80A]", className = "" }) {
+function InfoBubble({ eyebrow, title, text, eyebrowClass = "text-fusion-yellow", className = "" }) {
   return (
     <div className={`flex flex-col gap-4 rounded-br-[32px] rounded-tl-[32px] rounded-tr-[32px] bg-white px-9 py-11 lg:px-[60px] ${className}`}>
       <div className="flex flex-col gap-3">
@@ -129,7 +135,7 @@ export default function Athletics() {
         <div className="mx-auto flex w-full max-w-[1360px] flex-col gap-8 px-5 pb-8 pt-12 md:px-[84px]">
           <div className="flex flex-col items-start gap-8 lg:flex-row">
             <div className="relative flex w-full max-w-[739px] flex-col gap-1 rounded-br-[32px] rounded-tl-[32px] rounded-tr-[32px] bg-gray-100 px-8 py-11 lg:px-16 lg:pb-[62px]">
-              <p className={`${karla.className} text-xl font-bold tracking-[0.12em] text-[#FAC80A]/60 lg:text-2xl`}>
+              <p className={`${karla.className} text-xl font-bold tracking-[0.12em] text-fusion-yellow/60 lg:text-2xl`}>
                 F-TEK &raquo;
               </p>
               <h3 className={`${karla.className} text-3xl font-bold text-black lg:text-[40px]`}>
@@ -145,15 +151,15 @@ export default function Athletics() {
               </p>
             </div>
             <div className="relative h-[300px] w-full max-w-[511px] overflow-hidden rounded-bl-[32px] rounded-br-[32px] rounded-tl-[32px] lg:h-[383px]">
-              <Image src="/athletics/ftek-photo.png" alt="F-TEK dance workshop" fill sizes="511px" className="object-cover" />
+              <Image src="/athletics/ftek-photo.jpg" alt="F-TEK dance workshop" fill sizes="511px" className="object-cover" />
             </div>
           </div>
 
           {/* yellow diamond accents */}
           <div className="flex gap-5 self-center lg:self-auto lg:pl-[624px]">
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]/50" />
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]/70" />
-            <span className="h-5 w-5 rotate-45 bg-[#FAC80A]" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow/50" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow/70" />
+            <span className="h-5 w-5 rotate-45 bg-fusion-yellow" />
           </div>
 
           {/* TODO: replace with the autoplaying F-TEK video from the design */}
